@@ -2,7 +2,7 @@ function add_unsplash_credit() {
     var el = document.querySelector( "#site-main > div > article > figure" );
     
     if (el && el.style.backgroundImage) {
-        var re = /(.*)\/([\w-]+)-@([\w]+)-([0-9]+)-unsplash\.jpg\"\)/g;
+        var re = /(.*)\/([\w-]+)-@([\w]+)-([a-zA-Z0-9]+)-unsplash\.jpg\"\)/g;
         var photog_name = el.style.backgroundImage.replace(re, '$2');
         var photog_user = el.style.backgroundImage.replace(re, '$3');
     
